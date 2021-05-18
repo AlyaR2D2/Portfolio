@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="PortfolioStyle.css">
+</head>
+<body>
+<script src="PortfolioJS2.js"></script>
+<header>
+    <div class="container">
+<section id = "navigation_block">
+    <nav>
+    <div class="header_head">
+        <div class="header_item logo"> <h1>Ivanova Maria, Front-end developer</h1></div>
+<div class ="header_item buttons">
+      <div class ="H_item">  <a href="#about">About me</a></div>
+          <div class ="H_item"> <a href="#portfolio">Portfolio</a></div>
+              <div class ="H_item"><a href="#contacts">Contacts</a></div>
+                <div class ="H_item"><a href="#about">Home</a></div>
+</div>
+        <div class="header_burger" onclick="OpenBurgerFunction()" id="burger">
+            <span></span>
+        </div>
+        <div class = "hamburger" id = "burger_menu">
+            <ul class="burger_list">
+                <li>
+                    <a href="#about" onclick="OpenBurgerFunction()">About me</a>
+                </li>
+                <li>
+                    <a href="#portfolio" onclick="OpenBurgerFunction()">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts" onclick="OpenBurgerFunction()">Contacts</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    </nav>
+</section>
+    </div>
+</header>
+
+<section id="about">
+    <div class="about">
+        <div class="about_items">
+            <div class="about_items img1"><img src="image.jpg"></div>
+            <div class="about_items img2"><img src="PhotoForResume.jpg" alt="Ivanova Maria pic" ></div>
+    </div>
+    <div class="about_items">
+        <div class="about_items caption"><h2>About me</h2></div>
+<div class="about_items text"><p>Hi, I'm Ivanova Maria.I've been a junior front-end developer for 5 month now.</p>
+    <p>For me,programming is not just a job, it's a hobby.</p>
+    <p>I'm open to new knowledge,I like to study new technologies and apply them in practice</p>
+    <p>Skills:HTML,CSS,JS,React</p>
+</div>
+</div>
+    </div>
+</section>
+
+<section id="portfolio">
+<div class="portfolio">
+   <div class="portfolio_item name"> <h2>Portfolio</h2></div>
+    <div class="portfolio_item">
+        <div class="container_for_img">
+            <div class="container1">
+        <img class="img3" src="ScreenShotProjectOne.png" alt="project Flashcards pic" width="200px" height="150px">
+                <button class="open-window" onclick="myFunction()">Open</button>
+                <div class="window" id="window">
+                    <div class="window-body">
+                        <h3> Flashcards </h3>
+                        <p>You can see the project at the following link: <a href ="http://localhost:63342/Portfolio/Portfolio/task/src/index.html?_ijt=an0himhd4suvp83c8taaceofgk" class="not_white_a">flashcards</a> </p>
+                        <p>I did this project when I was study the frontend on HyperSkill. I created a web page with flip-down
+                            flash cards, learned some HTML basics and leaned that CSS can easily make a beautiful design.</p>
+                        <a id="close_button" onclick="myFunctionClose()">Close</a>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            <h6>Flashcards</h6></div>
+        <div class="container2">
+            <img class="img3" src="project2.png" alt="project Piano pic" width="200px" height="150px">
+            <button class="open-window" onclick="myFunction2()" >Open</button>
+            <div class="window" id="window2">
+                <div class="window-body">
+                    <h3> Virtual Piano </h3>
+                    <p>You can see the project at the following link: <a href ="http://localhost:63342/Portfolio/Portfolio/task/src/index.html?_ijt=an0himhd4suvp83c8taaceofgk" class="not_white_a">flashcards</a> </p>
+                    <a id="close_button2" onclick="myFunctionClose2()">Close</a>
+                </div>
+            </div>
+            <h6>Virtual Piano</h6></div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="contacts">
+    <div class="contacts">
+        <div class="contacts_item"><h3>CONTACTS</h3></div>
+        <div class="contacts_item"><a href="mailto:iamalevtina@gmail.com">iamalevtina@gmail.com</a></div>
+        <div class="contacts_item">
+            <div class="contacts_item img">
+                <div class="img_contacts"><img src="github.svg"> </div>
+                <div class="img_contacts"><img src="facebook.svg"></div>
+                <div class="img_contacts"><img src="twitter.svg"></div>
+                <div class="img_contacts"><img src="instagram%201.svg"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="footer">
+    <p class="footer_p">"Дорогу осилит идущий"</p>
+
+    </div>
+</footer>
+</body>
+</html>
